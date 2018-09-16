@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizzSchoolApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="QuestionView" customModule="QuizzSchoolApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQL-FI-myq" customClass="QuestionView" customModule="QuizzSchoolApp" customModuleProvider="target">
+                                <rect key="frame" x="37" y="190" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTE-rv-WEu">
+                                        <rect key="frame" x="10" y="10" width="280" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.35878637429999999" green="0.41861596699999998" blue="0.50107705589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q0g-h1-zsQ">
+                                        <rect key="frame" x="128" y="237" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx8-hz-4e8">
+                                <rect key="frame" x="129" y="688" width="130" height="44"/>
+                                <color key="backgroundColor" red="0.40518298749999998" green="0.55271756650000003" blue="0.76683276889999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <state key="normal" title="New game">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="diTapNewGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6aK-PE-frv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Système ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atW-34-C5K">
+                                <rect key="frame" x="5" y="74" width="365" height="23.333333333333329"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.81230539079999997" green="0.9197229147" blue="0.65953695769999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcs-8Y-TAx">
+                                <rect key="frame" x="100" y="537" width="175" height="30"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ozf-bb-yKd">
+                                <rect key="frame" x="177" y="617" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35878637429999999" green="0.41861596699999998" blue="0.50107705589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gQL-FI-myq" secondAttribute="trailing" constant="38" id="52J-K7-s0O"/>
+                            <constraint firstItem="zcs-8Y-TAx" firstAttribute="top" secondItem="gQL-FI-myq" secondAttribute="bottom" constant="47" id="8eN-8R-0Uf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yx8-hz-4e8" secondAttribute="trailing" constant="116" id="Gs5-px-oaN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zcs-8Y-TAx" secondAttribute="trailing" constant="100" id="Jt8-fW-MeP"/>
+                            <constraint firstItem="ozf-bb-yKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="Kyt-3E-jIV"/>
+                            <constraint firstItem="Yx8-hz-4e8" firstAttribute="top" secondItem="gQL-FI-myq" secondAttribute="bottom" constant="198" id="LBd-Uy-KKc"/>
+                            <constraint firstItem="gQL-FI-myq" firstAttribute="top" secondItem="atW-34-C5K" secondAttribute="bottom" constant="92.670000000000002" id="LcF-uz-Nb5"/>
+                            <constraint firstItem="gQL-FI-myq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="LuP-bX-PfJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ozf-bb-yKd" secondAttribute="trailing" constant="178" id="MQn-WS-9Ta"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yx8-hz-4e8" secondAttribute="bottom" constant="46" id="ON2-vN-yAg"/>
+                            <constraint firstItem="Yx8-hz-4e8" firstAttribute="top" secondItem="ozf-bb-yKd" secondAttribute="bottom" constant="51" id="Quq-Sw-3F7"/>
+                            <constraint firstItem="ozf-bb-yKd" firstAttribute="top" secondItem="zcs-8Y-TAx" secondAttribute="bottom" constant="50" id="R4m-eH-10g"/>
+                            <constraint firstItem="atW-34-C5K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Zmg-FM-ard"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="atW-34-C5K" secondAttribute="trailing" constant="5" id="ofE-I4-AYl"/>
+                            <constraint firstItem="Yx8-hz-4e8" firstAttribute="top" secondItem="zcs-8Y-TAx" secondAttribute="bottom" constant="121" id="p1v-yH-VqS"/>
+                            <constraint firstItem="Yx8-hz-4e8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="uGw-ho-waL"/>
+                            <constraint firstItem="atW-34-C5K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="wnA-QH-FTf"/>
+                            <constraint firstItem="zcs-8Y-TAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="zTE-hC-VAf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="icon" destination="q0g-h1-zsQ" id="7lk-WN-dMk"/>
+                            <outlet property="label" destination="ZTE-rv-WEu" id="vIn-Yx-gBv"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ozf-bb-yKd" id="agN-NC-uyZ"/>
+                        <outlet property="newGameButton" destination="Yx8-hz-4e8" id="3Ud-Qa-Ckk"/>
+                        <outlet property="questionView" destination="gQL-FI-myq" id="xJM-hF-AVH"/>
+                        <outlet property="scoreLabel" destination="zcs-8Y-TAx" id="vzm-ob-6UU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="33.990147783251231"/>
+        </scene>
+    </scenes>
+</document>
